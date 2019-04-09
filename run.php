@@ -13,10 +13,10 @@ class Adil
          * I know who I am, but by upholding justice is it wrong?
          */
         $banner =
-            "      
-                   Negeri ini butuh keadilan, bukan hanya kesejahteraan 
-                   #JusticeForAudrey
-                   Bot by : ChendyR \n\n";
+            "  \n    
+ Negeri ini butuh keadilan, bukan hanya kesejahteraan 
+ #JusticeForAudrey
+ Bot by : ChendyR \n\n";
         echo $banner;
         echo "Jumlah Petisi untuk membantu : ";
         $amount = trim(fgets(STDIN));
@@ -27,7 +27,7 @@ class Adil
             $check = $this->curl('http://yarzc0de.co.id/api/adil.php');
             if(json_decode($check[1],1)['success'] == true)
             {
-                echo "Support telah ditambahkan, Nama: ".json_decode($check[1],1)['name']." | ID Pengguna: ".json_decode($check[1],1)['id']."\n";
+                echo "Support / Petisi telah ditambahkan, \n Nama: ".json_decode($check[1],1)['name']." \n ID Pengguna: ".json_decode($check[1],1)['id']."\n\n";
             } else {
                 echo "Kesalahan tidak terduga pada sistem.\n";
             }
