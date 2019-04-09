@@ -18,7 +18,7 @@ class Adil
                    #JusticeForAudrey
                    Bot by : ChendyR \n\n";
         echo $banner;
-        echo "Amount to help? ";
+        echo "Jumlah Petisi untuk membantu : ";
         $amount = trim(fgets(STDIN));
         $i=0;
         echo "\n";
